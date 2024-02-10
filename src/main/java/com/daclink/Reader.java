@@ -10,7 +10,7 @@ public class Reader {
   public static int NAME_;
   public static int PHONE_;
   public static int BOOK_COUNT_;
-  public static int BOOK_START_ = 4;
+  public static int BOOK_START_;
 
   private int cardNumber;
   private String name;
