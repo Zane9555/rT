@@ -1,6 +1,7 @@
 /**
  * Name: Daniel Bernal
  * Date: 2/9/24
+ * Project 01 Part 02/04
  * This class creates a reader and has methods that allows the reader to check out books
  */
 
