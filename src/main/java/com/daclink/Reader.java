@@ -1,3 +1,9 @@
+/**
+ * Name Daniel Bernal
+ * Date: 2/9/24
+ * This class creates a reader and has methods that has the ability to check out books.
+ */
+
 package com.daclink;
 import com.daclink.Utilities.Code;
 
@@ -46,11 +52,7 @@ public class Reader {
   }
 
   public boolean hasBook(Book book){
-    if(books.contains(book) ){
-      return true;
-    }
-
-    return false;
+    return books.contains(book);
   }
 
   public String toString(){
@@ -91,8 +93,7 @@ public class Reader {
 
 
   public int getBookCount() {
-    BOOK_COUNT_ = books.size();
-    return BOOK_COUNT_;
+    return books.size();
   }
 
   public int getCardNumber() {
