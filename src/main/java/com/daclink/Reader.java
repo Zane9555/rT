@@ -57,7 +57,18 @@ public class Reader {
   }
 
   public String toString(){
-    return name + "(#" + cardNumber + ") has checked out " + getBooks();
+    StringBuilder sb = new StringBuilder();
+    sb.append(name).append(" (#").append(cardNumber).append(") has checked out {");
+    for(Book book: books){
+      sb.append(book.toString()).append(", ");
+    }
+    if(!books.isEmpty()){
+      sb.setLength(sb.length() - 2);
+    }
+    sb.append("}");
+    return sb.toString();
+
+//    return name + "(#" + cardNumber + ") has checked out " + getBooks();
   }
 
 
