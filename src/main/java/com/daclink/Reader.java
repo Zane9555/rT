@@ -1,3 +1,9 @@
+/**
+ * Name: Daniel Bernal
+ * Date: 2/9/24
+ * This class creates a reader and allows them to check out books.
+ */
+
 package com.daclink;
 import com.daclink.Utilities.Code;
 
@@ -6,10 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Reader {
-  public static int CARD_NUMBER_;
-  public static int NAME_;
-  public static int PHONE_;
-  public static int BOOK_COUNT_;
+  public static int CARD_NUMBER_ = 0;
+  public static int NAME_ = 1;
+  public static int PHONE_ = 2;
+  public static int BOOK_COUNT_ = 3;
   public static int BOOK_START_ = 4;
 
   private int cardNumber;
@@ -46,11 +52,7 @@ public class Reader {
   }
 
   public boolean hasBook(Book book){
-    if(books.contains(book) ){
-      return true;
-    }
-
-    return false;
+    return books.contains(book);
   }
 
   public String toString(){
@@ -91,8 +93,7 @@ public class Reader {
 
 
   public int getBookCount() {
-    BOOK_COUNT_ = books.size();
-    return BOOK_COUNT_;
+    return books.size();
   }
 
   public int getCardNumber() {
